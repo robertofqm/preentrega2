@@ -13,14 +13,16 @@ body{
 h6{
     height: 10px;
     width: 100%;
-    background-color: rgba(76, 78, 78, 0.692);
+    background-color:rgba(146, 144, 144, 0.997);
     color: dimgray;
     border-radius: 8px;
     text-align: right;
-    padding-top: 22px;
-    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
     padding-right: 10px; 
-    font-size: 10px;}  
+    font-size: 10px;
+    margin-top: 10px;
+  }
 
 #header ul {    
     list-style:none;
@@ -168,7 +170,8 @@ img{
   grid-template-rows: 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 10px;}
+  margin-top: 10px;
+margin-bottom: 10px;}
 
 form {
     
@@ -179,4 +182,19 @@ form {
     text-align:left ;
      
   }
+  .animacion{
+    width: auto;
+    height: auto;
+    background-color: none;
+    position: relative;
+    animation: mymove 4s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  @keyframes mymove {
+    100%{
+  transform: translatex(0%) translateX(60%) translatex(0%)}
+  from {left: 10px;}
+  to {left: -90px;}
+    }
    
